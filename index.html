@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sara Khalid – Aspiring Full Stack Web Developer</title>
+<meta name="description" content="Online resume of Sara Khalid, BS Software Engineering student at Iqra University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="layout">
+  <!-- ===== Profile rail (EDIT YOUR DETAILS) ===== -->
+  <aside class="rail">
+    <div class="avatar" aria-hidden="true">SK</div>
+    <h1>Sara Khalid</h1>
+    <p class="role">Aspiring Full Stack Web Developer</p>
+    <p class="loc">Karachi, Pakistan</p>
+
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="rail-actions">
+      <button id="themeBtn" type="button" aria-pressed="false">Dark mode</button>
+      <button id="copyBtn" type="button" data-email="Sara.63874@iqra.edu.pk">Copy email</button>
+    </div>
+    <p id="toast" role="status" aria-live="polite"></p>
+  </aside>
+
+  <main id="main">
+    <section id="about">
+      <h2>About me</h2>
+      <p>I am a BS Software Engineering student at Iqra University with a strong interest in becoming a full stack web developer. I enjoy building practical applications, and I am committed to strengthening my technical skills and growing steadily in this field.</p>
+      <p>I am currently focused on web engineering fundamentals: semantic HTML, responsive CSS and interactive JavaScript. My goal is to keep learning, build more complete projects, and contribute to a professional development team.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="item">
+        <div class="when">2023 – Present</div>
+        <div>
+          <h3>BS Software Engineering</h3>
+          <p class="meta">Iqra University, Karachi</p>
+          <p>Current CGPA: 2.65. Coursework includes Web Engineering and core software engineering subjects.</p>
+        </div>
+      </article>
+      <article class="item">
+        <div class="when">2022</div>
+        <div>
+          <h3>Intermediate (Higher Secondary)</h3>
+          <p class="meta">Shah Abdul Latif, Sukkur</p>
+          <p>Grade A1, 85% in the Intermediate Board Examination.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Technical skills</h2>
+      <p class="hint">Select a skill group to see my current levels.</p>
+      <div class="tabs" role="tablist" aria-label="Skill groups">
+        <button role="tab" aria-selected="true" data-group="web">Web</button>
+        
+        <button role="tab" aria-selected="false" data-group="tools">Tools</button>
+        <button role="tab" aria-selected="false" data-group="office">Office</button>
+      </div>
+      <ul class="meters" id="meters"></ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <article class="item">
+        <div class="when">Part-time</div>
+        <div>
+          <h3>Home Tuition Instructor</h3>
+          <p class="meta">Self-employed, Karachi</p>
+          <ul>
+            <li>Teach and support students one-to-one through regular home tuition sessions.</li>
+            <li>Plan lessons, explain concepts clearly and track student progress.</li>
+            <li>Developed communication, patience and time management skills.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters" id="filters" aria-label="Filter projects by technology"></div>
+      <div class="grid" id="projectGrid">
+        <article class="card" data-tags="Software Engineering">
+          <h3>Attendance Management System</h3>
+          <p>A system that records and manages student attendance, keeping accurate and balanced attendance records for every student.</p>
+          <div class="tags"><span>Software Engineering</span></div>
+        </article>
+        <article class="card" data-tags="HTML,CSS">
+          <h3>Coffee Website</h3>
+          <p>A coffee shop website built with HTML where customers can view the menu and learn how to place an online coffee order.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+        </article>
+        <article class="card" data-tags="Software Engineering">
+          <h3>Library Management System</h3>
+          <p>A library system that manages essential operations such as book records, issuing and returning books, and member details.</p>
+          <div class="tags"><span>Software Engineering</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certs">
+      <h2>Certifications</h2>
+      <ul class="plain">
+        <li><strong>Certificate in Information Technology (CIT)</strong> – ILM UN NISA Institute. Covered MS Office, Internet and Computer Applications. Reg. ID: 63874.</li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul class="plain">
+        <li>Secured 85% (Grade A1) in the Intermediate Board Examination.</li>
+        <li>Earned the Certificate in Information Technology (CIT) from ILM UN NISA Institute.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="plain contact">
+        <li>Email: <a href="mailto:Sara.63874@iqra.edu.pk">Sara.63874@iqra.edu.pk</a></li>
+        <li>Location: Karachi, Pakistan</li>
+        <li>GitHub: <a href="https://github.com/sara63874-creator" target="_blank" rel="noopener">github.com/sara63874-creator</a></li>
+      </ul>
+    </section>
+
+    <footer>&copy; <span id="year"></span> Sara Khalid</footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
